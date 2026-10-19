@@ -23,7 +23,9 @@ function route() {
 /* ---------- poster viewer ---------- */
 
 const viewer = $('#viewer');
-const openPoster = (it) => { $('img', viewer).src = `assets/img/kokteyl/${it.img}.jpg`; $('img', viewer).alt = it.name; viewer.showModal(); };
+// Posters shipped with the site are bare names; ones uploaded from /admin are /img/<id>
+const posterUrl = (img, sm) => `${img.startsWith('/') ? img : `assets/img/kokteyl/${img}`}${sm ? '-sm' : ''}.jpg`;
+const openPoster = (it) => { $('img', viewer).src = posterUrl(it.img); $('img', viewer).alt = it.name; viewer.showModal(); };
 $('#viewer-close').addEventListener('click', () => viewer.close());
 viewer.addEventListener('click', (e) => { if (e.target === viewer) viewer.close(); });
 
@@ -31,12 +33,12 @@ viewer.addEventListener('click', (e) => { if (e.target === viewer) viewer.close(
 
 function sigCard(it) {
   const card = el('article', 'sig');
-  card.id = `k-${it.img}`;
+  card.id = `k-${it.img.replace(/\W/g, '')}`;
   const imgBtn = el('button', 'sig-img');
   imgBtn.type = 'button';
   imgBtn.setAttribute('aria-label', `${it.name} görselini büyüt`);
   const img = new Image();
-  img.src = `assets/img/kokteyl/${it.img}-sm.jpg`;
+  img.src = posterUrl(it.img, true);
   img.alt = '';
   img.loading = 'lazy';
   imgBtn.append(img);
@@ -146,14 +148,14 @@ function renderQuiz() {
   $('#quiz-step').textContent = 'Senin kokteylin';
   const r = el('div', 'result');
   const img = new Image();
-  img.src = `assets/img/kokteyl/${best.img}-sm.jpg`;
+  img.src = posterUrl(best.img, true);
   img.alt = best.name;
   const row = el('div', 'row');
   const go = el('button', 'primary', 'Menüde gör');
   go.type = 'button';
   go.addEventListener('click', () => {
     quiz.close();
-    const card = document.getElementById(`k-${best.img}`);
+    const card = document.getElementById(`k-${best.img.replace(/\W/g, '')}`);
     card.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
     card.classList.remove('hl'); void card.offsetWidth; card.classList.add('hl');
   });
@@ -222,17 +224,27 @@ function buildMatches(fixtures, mekan) {
   });
 }
 
+// Cocktails added from /admin only have flavor bars; derive the quiz profile from them
+function withTaste(it) {
+  if (it.taste || !it.bars) return it;
+  const bar = (re) => it.bars.find(([k]) => re.test(k.toLocaleLowerCase('tr-TR')))?.[1];
+  const tatli = bar(/tatl/) ?? 50, eksi = bar(/ekşi|eksi/) ?? 0;
+  return { ...it, taste: { tatli, sert: bar(/alkol|sert/) ?? 45, kahve: bar(/kahve/) ? 1 : 0, bal: bar(/bal/) ? 1 : 0, ferah: eksi >= 40 ? 1 : 0 } };
+}
+
 /* ---------- init ---------- */
 
 async function init() {
   const [menu, fx, mekan] = await Promise.all([
-    getJson('data/menu.json', { tabs: [] }),
+    // Menu saved from /admin; the shipped file covers local previews and the time before the first save
+    getJson('/api/menu', null).then((m) => (m?.tabs?.length ? m : getJson('data/menu.json', { tabs: [] }))),
     // Live fixtures from the Pages Function; the static file covers local previews and outages
     getJson('/api/maclar', null).then((r) => (r?.maclar?.length ? r : getJson('data/maclar.json', { maclar: [] }))),
     getJson('data/mekan.json', {}),
   ]);
   const fixtures = (fx.maclar || []).map((m) => ({ ...m, t: new Date(m.tarih) })).filter((m) => m.t.getTime() + LIVE_MS > Date.now()).sort((a, b) => a.t - b.t);
-  signatures = menu.tabs.flatMap((t) => t.sections.flatMap((s) => s.items)).filter((i) => i.img);
+  menu.tabs = menu.tabs.filter((t) => !t.hidden).map((t) => ({ ...t, sections: t.sections.map((x) => ({ ...x, items: x.items.filter((i) => !i.hidden) })).filter((x) => x.items.length) }));
+  signatures = menu.tabs.flatMap((t) => t.sections.flatMap((s) => s.items)).filter((i) => i.img).map(withTaste);
   buildMenu(menu, signatures);
   buildMatches(fixtures, mekan);
   addEventListener('hashchange', route);

@@ -1,0 +1,3 @@
+# Admin panel stays out of search results
+/admin*
+  X-Robots-Tag: noindex, nofollow
