@@ -204,6 +204,10 @@ function buildMatches(fixtures, mekan) {
   for (const m of fixtures.slice(0, 5)) sel.append(new Option(`${teams(m)} · ${whenText(m.t)}`, `${teams(m)} maçı (${whenText(m.t)})`));
   sel.append(new Option('Maç dışında bir akşam', 'maç dışında bir akşam'));
 
+  if (mekan.instagram) {
+    document.querySelectorAll('[data-ig]').forEach((a) => { a.href = `https://www.instagram.com/${mekan.instagram}/`; a.hidden = false; });
+    document.querySelectorAll('[data-ig-name]').forEach((n) => { n.textContent = `@${mekan.instagram}`; });
+  }
   const wa = (mekan.whatsapp || mekan.telefon || '').replace(/\D/g, '');
   const tel = (mekan.telefon || mekan.whatsapp || '').replace(/\D/g, '');
   $('#pending').hidden = Boolean(wa && tel);
@@ -223,7 +227,8 @@ function buildMatches(fixtures, mekan) {
 async function init() {
   const [menu, fx, mekan] = await Promise.all([
     getJson('data/menu.json', { tabs: [] }),
-    getJson('data/maclar.json', { maclar: [] }),
+    // Live fixtures from the Pages Function; the static file covers local previews and outages
+    getJson('/api/maclar', null).then((r) => (r?.maclar?.length ? r : getJson('data/maclar.json', { maclar: [] }))),
     getJson('data/mekan.json', {}),
   ]);
   const fixtures = (fx.maclar || []).map((m) => ({ ...m, t: new Date(m.tarih) })).filter((m) => m.t.getTime() + LIVE_MS > Date.now()).sort((a, b) => a.t - b.t);

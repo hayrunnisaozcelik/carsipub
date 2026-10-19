@@ -1,23 +1,203 @@
 {
- "note": "Avrupa Ligi tarihleri basından alındı; saatleri ve lig maçlarını mekân teyit etmeli.",
+ "note": "Yedek liste: canlı veri /api/maclar (ESPN) çalışmazsa kullanılır. 19 Ekim 2026'da ESPN'den alındı.",
  "maclar": [
   {
-   "tarih": "2026-10-22T22:00:00+03:00",
+   "tarih": "2026-10-19T17:00:00Z",
+   "rakip": "Trabzonspor",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2026-10-22T19:00:00Z",
    "rakip": "Crystal Palace",
-   "turnuva": "UEFA Avrupa Ligi",
-   "yer": "İç saha"
+   "yer": "İç saha",
+   "turnuva": "UEFA Avrupa Ligi"
   },
   {
-   "tarih": "2026-11-05T23:00:00+03:00",
+   "tarih": "2026-10-26T16:00:00Z",
+   "rakip": "Başakşehir",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2026-11-01T16:00:00Z",
+   "rakip": "Kasımpaşa",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2026-11-05T20:00:00Z",
    "rakip": "Celtic",
-   "turnuva": "UEFA Avrupa Ligi",
-   "yer": "Deplasman"
+   "yer": "Deplasman",
+   "turnuva": "UEFA Avrupa Ligi"
   },
   {
-   "tarih": "2026-11-26T20:45:00+03:00",
+   "tarih": "2026-11-08T18:00:00Z",
+   "rakip": "Gençlerbirliği",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2026-11-22T13:00:00Z",
+   "rakip": "Konyaspor",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2026-11-26T17:45:00Z",
    "rakip": "Hapoel Beer Sheva",
-   "turnuva": "UEFA Avrupa Ligi",
-   "yer": "İç saha"
+   "yer": "İç saha",
+   "turnuva": "UEFA Avrupa Ligi"
+  },
+  {
+   "tarih": "2026-11-30T18:00:00Z",
+   "rakip": "Galatasaray",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2026-12-06T13:00:00Z",
+   "rakip": "Samsunspor",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2026-12-10T20:00:00Z",
+   "rakip": "Bayer Leverkusen",
+   "yer": "Deplasman",
+   "turnuva": "UEFA Avrupa Ligi"
+  },
+  {
+   "tarih": "2026-12-14T17:00:00Z",
+   "rakip": "Gaziantep FK",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2026-12-20T16:00:00Z",
+   "rakip": "Çaykur Rizespor",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-01-17T20:00:00Z",
+   "rakip": "Göztepe",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-01-21T17:45:00Z",
+   "rakip": "Union St.-Gilloise",
+   "yer": "İç saha",
+   "turnuva": "UEFA Avrupa Ligi"
+  },
+  {
+   "tarih": "2027-01-24T20:00:00Z",
+   "rakip": "Eyüpspor",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-01-28T20:00:00Z",
+   "rakip": "Omonia Nicosia",
+   "yer": "Deplasman",
+   "turnuva": "UEFA Avrupa Ligi"
+  },
+  {
+   "tarih": "2027-01-31T20:00:00Z",
+   "rakip": "Alanyaspor",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-02-07T20:00:00Z",
+   "rakip": "Çorum FK",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-02-14T20:00:00Z",
+   "rakip": "Fenerbahçe",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-02-21T20:00:00Z",
+   "rakip": "Erzurumspor",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-02-28T20:00:00Z",
+   "rakip": "Amedspor",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-03-07T20:00:00Z",
+   "rakip": "Kocaelispor",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-03-14T18:00:00Z",
+   "rakip": "Trabzonspor",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-03-21T18:00:00Z",
+   "rakip": "Başakşehir",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-04-04T18:00:00Z",
+   "rakip": "Kasımpaşa",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-04-11T18:00:00Z",
+   "rakip": "Gençlerbirliği",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-04-18T18:00:00Z",
+   "rakip": "Konyaspor",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-04-25T18:00:00Z",
+   "rakip": "Galatasaray",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-05-02T18:00:00Z",
+   "rakip": "Samsunspor",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-05-09T18:00:00Z",
+   "rakip": "Gaziantep FK",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-05-16T18:00:00Z",
+   "rakip": "Çaykur Rizespor",
+   "yer": "Deplasman",
+   "turnuva": "Süper Lig"
+  },
+  {
+   "tarih": "2027-05-23T18:00:00Z",
+   "rakip": "Göztepe",
+   "yer": "İç saha",
+   "turnuva": "Süper Lig"
   }
  ]
 }

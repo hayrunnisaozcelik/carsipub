@@ -17,12 +17,11 @@ Tek sayfa, üç ekran (adres çubuğundaki `#` ile geçilir):
 ## Veri dosyaları
 
 - `data/menu.json`: menü. `"img"` olan ürün Signature kartı olur (`assets/img/kokteyl/<img>.jpg` ve `<img>-sm.jpg`); `desc` açıklama, `bars` tat oranları, `taste` test puanlaması.
-- `data/maclar.json`: fikstür. Geçmiş maçlar kendiliğinden düşer.
+- **Maçlar internetten gelir:** `functions/api/maclar.js` (Cloudflare Pages Function) Beşiktaş'ın Süper Lig, Avrupa kupaları ve Türkiye Kupası fikstürünü ESPN'in herkese açık ama resmî olmayan API'sinden çeker, 3 saat önbellekte tutar. ESPN cevap vermezse `data/maclar.json` yedeği kullanılır; yerelde `python3 -m http.server` ile açınca da yedek görünür (fonksiyonları denemek için `npx wrangler pages dev .`).
 - `data/mekan.json`: telefon, WhatsApp, Instagram, adres. Numara girilince rezervasyon butonları çalışır.
 
 ## Eksikler
 
 - Logo, basılı menüden çizilmiş bir SVG; asıl logo dosyası gelince değiştirilmeli.
-- `data/mekan.json`: telefon/WhatsApp (rezervasyon için şart), adres, Instagram, çalışma saatleri.
+- `data/mekan.json`: adres ve çalışma saatleri (telefon, WhatsApp ve Instagram girildi).
 - Kokteyl açıklamaları taslak; barmen düzeltmeli.
-- Maç saatleri basından alındı, teyit edilmeli; lig maçları eklenmeli.
