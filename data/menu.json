@@ -1,0 +1,1000 @@
+{
+ "updated": "31.07.2026",
+ "tabs": [
+  {
+   "id": "signature",
+   "title": "Signature",
+   "sections": [
+    {
+     "title": "Signature Kokteyller",
+     "items": [
+      {
+       "name": "Trivela",
+       "price": 550,
+       "kcal": 600,
+       "img": "trivela",
+       "desc": "Soğuk kahve, Gentleman Jack ve tarçın. Taraftarın kokteyli.",
+       "bars": [
+        [
+         "Kahve",
+         50
+        ],
+        [
+         "Tatlı",
+         50
+        ],
+        [
+         "Enerji",
+         25
+        ]
+       ],
+       "taste": {
+        "tatli": 50,
+        "kahve": 1,
+        "sert": 60
+       }
+      },
+      {
+       "name": "Bal Ayısı",
+       "price": 550,
+       "kcal": 600,
+       "img": "bal-ayisi",
+       "desc": "Bal ve narenciyeyle yumuşak, köpüklü bir sour.",
+       "bars": [
+        [
+         "Tatlı",
+         70
+        ],
+        [
+         "Ekşi",
+         30
+        ],
+        [
+         "Bal",
+         10
+        ]
+       ],
+       "taste": {
+        "tatli": 70,
+        "bal": 1,
+        "sert": 35
+       }
+      },
+      {
+       "name": "Şirin Baba",
+       "price": 550,
+       "kcal": 600,
+       "img": "sirin-baba",
+       "desc": "Mavi, buz gibi ve ekşi. Kırmızı meyveyle süslenir.",
+       "bars": [
+        [
+         "Tatlı",
+         30
+        ],
+        [
+         "Ekşi",
+         70
+        ]
+       ],
+       "taste": {
+        "tatli": 30,
+        "ferah": 1,
+        "sert": 40
+       }
+      },
+      {
+       "name": "Şirine",
+       "price": 550,
+       "kcal": 600,
+       "img": "sirine",
+       "desc": "Johnnie Walker bazlı, gül süslemeli, tatlı-sert bir kokteyl.",
+       "bars": [
+        [
+         "Tatlı",
+         60
+        ],
+        [
+         "Alkol",
+         50
+        ]
+       ],
+       "taste": {
+        "tatli": 60,
+        "ferah": 1,
+        "sert": 60
+       }
+      },
+      {
+       "name": "Shrek",
+       "price": 550,
+       "kcal": 600,
+       "img": "shrek",
+       "desc": "Misket limonlu, yeşil ve ferah. Yarı tatlı, yarı ekşi.",
+       "bars": [
+        [
+         "Tatlı",
+         50
+        ],
+        [
+         "Ekşi",
+         50
+        ]
+       ],
+       "taste": {
+        "tatli": 50,
+        "ferah": 1,
+        "sert": 40
+       }
+      },
+      {
+       "name": "Kartal",
+       "price": 550,
+       "kcal": 600
+      },
+      {
+       "name": "Deep Blue Sea",
+       "price": 550,
+       "kcal": 340
+      },
+      {
+       "name": "Gin Bull",
+       "price": 550,
+       "kcal": 360
+      },
+      {
+       "name": "Gin Daisy",
+       "price": 550,
+       "kcal": 300
+      },
+      {
+       "name": "Hulk",
+       "price": 550,
+       "kcal": 750
+      },
+      {
+       "name": "North of the Power",
+       "price": 550,
+       "kcal": 420
+      },
+      {
+       "name": "Pineapple Kiss",
+       "price": 550,
+       "kcal": 380
+      },
+      {
+       "name": "Pink Gin",
+       "price": 550,
+       "kcal": 250
+      },
+      {
+       "name": "Sherlock",
+       "price": 550,
+       "kcal": 600
+      },
+      {
+       "name": "Pikachu",
+       "price": 550,
+       "kcal": 600
+      },
+      {
+       "name": "Casper",
+       "price": 550,
+       "kcal": 600
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kokteyl",
+   "title": "Klasik Kokteyller",
+   "sections": [
+    {
+     "title": "Klasik Kokteyller",
+     "items": [
+      {
+       "name": "Apple Martini",
+       "price": 450,
+       "kcal": 180
+      },
+      {
+       "name": "Aperol Spritz",
+       "price": 450,
+       "kcal": 240
+      },
+      {
+       "name": "Black Russian",
+       "price": 450,
+       "kcal": 300
+      },
+      {
+       "name": "Bloody Mary",
+       "price": 450,
+       "kcal": 280
+      },
+      {
+       "name": "Bourbon Negroni",
+       "price": 450,
+       "kcal": 280
+      },
+      {
+       "name": "Cosmopolitan",
+       "price": 450,
+       "kcal": 230
+      },
+      {
+       "name": "Cuba Libre",
+       "price": 450,
+       "kcal": 230
+      },
+      {
+       "name": "Dirty Martini",
+       "price": 450,
+       "kcal": 230
+      },
+      {
+       "name": "Espresso Martini",
+       "price": 450,
+       "kcal": 300
+      },
+      {
+       "name": "Gin Fizz",
+       "price": 450,
+       "kcal": 220
+      },
+      {
+       "name": "Gin Martini",
+       "price": 450,
+       "kcal": 220
+      },
+      {
+       "name": "Jäger Bomb",
+       "price": 450,
+       "kcal": 330
+      },
+      {
+       "name": "Long Island",
+       "price": 475,
+       "kcal": 500
+      },
+      {
+       "name": "Lynchburg Lemonade",
+       "price": 475
+      },
+      {
+       "name": "Margarita",
+       "price": 450,
+       "kcal": 250
+      },
+      {
+       "name": "Mojito",
+       "price": 450,
+       "kcal": 250
+      },
+      {
+       "name": "Moscow Mule",
+       "price": 450,
+       "kcal": 250
+      },
+      {
+       "name": "Negroni",
+       "price": 450,
+       "kcal": 260
+      },
+      {
+       "name": "Piña Colada",
+       "price": 450,
+       "kcal": 500
+      },
+      {
+       "name": "Sex on the Beach",
+       "price": 450,
+       "kcal": 300
+      },
+      {
+       "name": "Tequila Sunrise",
+       "price": 450,
+       "kcal": 300
+      },
+      {
+       "name": "Votka Martini",
+       "price": 450,
+       "kcal": 230
+      },
+      {
+       "name": "Whiskey Sour",
+       "price": 450,
+       "kcal": 300
+      },
+      {
+       "name": "White Russian",
+       "price": 450,
+       "kcal": 280
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "viski",
+   "title": "Viski",
+   "note": "Bütün viskiler 110–120 kcal aralığında.",
+   "sections": [
+    {
+     "title": "Single Malt",
+     "items": [
+      {
+       "name": "Talisker",
+       "price": 575
+      },
+      {
+       "name": "Oban",
+       "price": 600
+      },
+      {
+       "name": "Singleton",
+       "price": 385
+      },
+      {
+       "name": "Cardhu",
+       "price": 425
+      },
+      {
+       "name": "Glenkinchie",
+       "price": 440
+      },
+      {
+       "name": "Glenlivet 12 Y.O.",
+       "price": 440
+      },
+      {
+       "name": "Glenfiddich 12 Y.O.",
+       "price": 560
+      },
+      {
+       "name": "Aberlour 12 Y.O.",
+       "price": 560
+      },
+      {
+       "name": "Lagavulin",
+       "price": 1200
+      },
+      {
+       "name": "Teeling",
+       "price": 800
+      },
+      {
+       "name": "Glenfarclas 12 Y.O.",
+       "price": 1050
+      },
+      {
+       "name": "Glenfarclas 15 Y.O.",
+       "price": 1300
+      }
+     ]
+    },
+    {
+     "title": "Blended Scotch",
+     "items": [
+      {
+       "name": "Red Label",
+       "price": 350
+      },
+      {
+       "name": "Black Label",
+       "price": 375
+      },
+      {
+       "name": "Gold Label",
+       "price": 425
+      },
+      {
+       "name": "Double Black",
+       "price": 425
+      },
+      {
+       "name": "Johnnie Walker 18 Y.O.",
+       "price": 625
+      },
+      {
+       "name": "Blue Label",
+       "price": 1950
+      },
+      {
+       "name": "J&B",
+       "price": 300
+      },
+      {
+       "name": "Dimple Gold",
+       "price": 350
+      },
+      {
+       "name": "Ballantine's Finest",
+       "price": 300
+      },
+      {
+       "name": "Ballantine's 12 Y.O.",
+       "price": 400
+      },
+      {
+       "name": "Chivas 12 Y.O.",
+       "price": 400
+      },
+      {
+       "name": "Chivas 18 Y.O.",
+       "price": 500
+      },
+      {
+       "name": "Famous Grouse",
+       "price": 300
+      },
+      {
+       "name": "Hibiki",
+       "price": 1950
+      }
+     ]
+    },
+    {
+     "title": "Tennessee",
+     "items": [
+      {
+       "name": "Jack Daniel's No.7",
+       "price": 325
+      },
+      {
+       "name": "Jack Honey",
+       "price": 325
+      },
+      {
+       "name": "Gentleman Jack",
+       "price": 425
+      }
+     ]
+    },
+    {
+     "title": "Bourbon",
+     "items": [
+      {
+       "name": "Jim Beam",
+       "price": 400
+      },
+      {
+       "name": "Bulleit Bourbon",
+       "price": 500
+      }
+     ]
+    },
+    {
+     "title": "Irish",
+     "items": [
+      {
+       "name": "Jameson",
+       "price": 385
+      },
+      {
+       "name": "Jameson Black Barrel",
+       "price": 425
+      },
+      {
+       "name": "Jameson IPA",
+       "price": 450
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spirits",
+   "title": "Cin · Rom · Tekila · Votka",
+   "sections": [
+    {
+     "title": "Cin",
+     "items": [
+      {
+       "name": "Beefeater",
+       "price": 375,
+       "kcal": 160
+      },
+      {
+       "name": "Beefeater Pink",
+       "price": 400,
+       "kcal": 160
+      },
+      {
+       "name": "Gordon's",
+       "price": 350,
+       "kcal": 160
+      },
+      {
+       "name": "Tanqueray Dry",
+       "price": 450,
+       "kcal": 160
+      },
+      {
+       "name": "Tanqueray No. Ten",
+       "price": 525,
+       "kcal": 160
+      },
+      {
+       "name": "Hendrick's",
+       "price": 750,
+       "kcal": 160
+      }
+     ]
+    },
+    {
+     "title": "Rom",
+     "items": [
+      {
+       "name": "Captain Morgan",
+       "price": 380
+      },
+      {
+       "name": "Havana Club 3 Años",
+       "price": 450
+      },
+      {
+       "name": "Bacardi",
+       "price": 450
+      }
+     ]
+    },
+    {
+     "title": "Tekila",
+     "items": [
+      {
+       "name": "Olmeca",
+       "price": 180
+      },
+      {
+       "name": "Olmeca Gold",
+       "price": 200
+      },
+      {
+       "name": "Patrón Silver",
+       "price": 500
+      },
+      {
+       "name": "Patrón Añejo",
+       "price": 525
+      },
+      {
+       "name": "Patrón Reposado",
+       "price": 475
+      },
+      {
+       "name": "Don Julio",
+       "price": 375
+      }
+     ]
+    },
+    {
+     "title": "Votka",
+     "items": [
+      {
+       "name": "Absolut",
+       "price": 400
+      },
+      {
+       "name": "Belvedere",
+       "price": 550
+      },
+      {
+       "name": "Beluga",
+       "price": 1100
+      },
+      {
+       "name": "Smirnoff",
+       "price": 375
+      }
+     ]
+    },
+    {
+     "title": "Setler",
+     "items": [
+      {
+       "name": "Cin Tonik",
+       "price": 500,
+       "kcal": 160
+      },
+      {
+       "name": "Cin Soda",
+       "price": 500,
+       "kcal": 160
+      },
+      {
+       "name": "Votka Redbull",
+       "price": 500,
+       "kcal": 400
+      },
+      {
+       "name": "Votka Meyve Suyu",
+       "price": 500,
+       "kcal": 400
+      },
+      {
+       "name": "Viski Redbull",
+       "price": 550,
+       "kcal": 380
+      },
+      {
+       "name": "Viski Kola",
+       "price": 550,
+       "kcal": 380
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bira",
+   "title": "Bira",
+   "sections": [
+    {
+     "title": "Fıçı",
+     "items": [
+      {
+       "name": "Efes Fıçı 30 cl",
+       "price": 160,
+       "kcal": 120
+      },
+      {
+       "name": "Efes Fıçı 50 cl",
+       "price": 180,
+       "kcal": 210
+      },
+      {
+       "name": "Becks Fıçı 30 cl",
+       "price": 200,
+       "kcal": 120
+      },
+      {
+       "name": "Becks Fıçı 50 cl",
+       "price": 180
+      }
+     ]
+    },
+    {
+     "title": "Şişe",
+     "items": [
+      {
+       "name": "Efes Şişe 33 cl",
+       "price": 200,
+       "kcal": 120
+      },
+      {
+       "name": "Efes +1",
+       "price": 200,
+       "kcal": 210
+      },
+      {
+       "name": "Efes Malt",
+       "price": 200,
+       "kcal": 210
+      },
+      {
+       "name": "Efes Özel Seri",
+       "price": 200,
+       "kcal": 210
+      },
+      {
+       "name": "Efes Glutensiz",
+       "price": 225,
+       "kcal": 210
+      },
+      {
+       "name": "Bomonti Filtresiz",
+       "price": 225,
+       "kcal": 210
+      },
+      {
+       "name": "Becks Şişe 50 cl",
+       "price": 225,
+       "kcal": 210
+      },
+      {
+       "name": "Bud Şişe 50 cl",
+       "price": 225,
+       "kcal": 210
+      },
+      {
+       "name": "Amsterdam",
+       "price": 325,
+       "kcal": 300
+      },
+      {
+       "name": "Corona",
+       "price": 280
+      },
+      {
+       "name": "Miller",
+       "price": 250
+      },
+      {
+       "name": "Belfast Şişe",
+       "price": 240,
+       "kcal": 210
+      },
+      {
+       "name": "Stella",
+       "price": 265
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "alkolsuz",
+   "title": "Kahve · Alkolsüz",
+   "sections": [
+    {
+     "title": "Kahveler",
+     "items": [
+      {
+       "name": "Türk Kahvesi",
+       "price": 150,
+       "kcal": 0.5
+      },
+      {
+       "name": "Espresso Single",
+       "price": 200,
+       "kcal": 0.5
+      },
+      {
+       "name": "Espresso Double",
+       "price": 225,
+       "kcal": 0.5
+      },
+      {
+       "name": "Americano",
+       "price": 225,
+       "kcal": 0.5
+      },
+      {
+       "name": "Cappuccino",
+       "price": 225,
+       "kcal": 320
+      },
+      {
+       "name": "Latte",
+       "price": 225,
+       "kcal": 450
+      },
+      {
+       "name": "Nescafe Sütlü / Sade",
+       "price": 200,
+       "kcal": 180
+      },
+      {
+       "name": "Sahlep",
+       "price": 225,
+       "kcal": 350
+      }
+     ]
+    },
+    {
+     "title": "Soğuk Kahveler",
+     "items": [
+      {
+       "name": "Ice Latte",
+       "price": 250,
+       "kcal": 120
+      },
+      {
+       "name": "Ice Mocha",
+       "price": 250,
+       "kcal": 380
+      },
+      {
+       "name": "Ice Karamel",
+       "price": 250,
+       "kcal": 350
+      },
+      {
+       "name": "Ice Americano",
+       "price": 250,
+       "kcal": 0.5
+      }
+     ]
+    },
+    {
+     "title": "Sıcak İçecekler",
+     "items": [
+      {
+       "name": "Çay",
+       "price": 50
+      },
+      {
+       "name": "Fincan Çay",
+       "price": 60,
+       "kcal": 0.2
+      }
+     ]
+    },
+    {
+     "title": "Bitki Çayları",
+     "items": [
+      {
+       "name": "Yeşil Çay",
+       "price": 225,
+       "kcal": 0.2
+      },
+      {
+       "name": "Ihlamur",
+       "price": 225,
+       "kcal": 0.2
+      },
+      {
+       "name": "Adaçayı",
+       "price": 225,
+       "kcal": 0.2
+      }
+     ]
+    },
+    {
+     "title": "Soğuk İçecekler",
+     "items": [
+      {
+       "name": "Su 50 cl",
+       "price": 40
+      },
+      {
+       "name": "Soda",
+       "price": 115
+      },
+      {
+       "name": "Meyveli Soda",
+       "price": 140,
+       "kcal": 60
+      },
+      {
+       "name": "Coca-Cola",
+       "price": 150,
+       "kcal": 140
+      },
+      {
+       "name": "Fanta",
+       "price": 150,
+       "kcal": 140
+      },
+      {
+       "name": "Sprite",
+       "price": 150,
+       "kcal": 140
+      },
+      {
+       "name": "Cappy",
+       "price": 150,
+       "kcal": 140
+      },
+      {
+       "name": "Schweppes",
+       "price": 150,
+       "kcal": 85
+      },
+      {
+       "name": "Ice Tea Limon / Şeftali",
+       "price": 150,
+       "kcal": 90
+      },
+      {
+       "name": "Churchill",
+       "price": 150,
+       "kcal": 30
+      },
+      {
+       "name": "Redbull",
+       "price": 215,
+       "kcal": 120
+      },
+      {
+       "name": "Limonata",
+       "price": 225,
+       "kcal": 120
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "yemek",
+   "title": "Atıştırmalık",
+   "sections": [
+    {
+     "title": "Atıştırmalıklar",
+     "items": [
+      {
+       "name": "Parmak Patates",
+       "price": 230,
+       "kcal": 500
+      },
+      {
+       "name": "Elma Dilim Patates",
+       "price": 240,
+       "kcal": 500
+      },
+      {
+       "name": "Sosis Patates Tabağı",
+       "price": 300,
+       "kcal": 500
+      },
+      {
+       "name": "Bira Tabağı",
+       "price": 475,
+       "kcal": 1900
+      }
+     ]
+    },
+    {
+     "title": "Çerezler",
+     "items": [
+      {
+       "name": "Karışık Çerez",
+       "price": 225,
+       "kcal": 650
+      },
+      {
+       "name": "Tuzlu",
+       "price": 175,
+       "kcal": 600
+      },
+      {
+       "name": "Kürdivite",
+       "price": 200,
+       "kcal": 600
+      },
+      {
+       "name": "Mısır",
+       "price": 100,
+       "kcal": 380
+      },
+      {
+       "name": "Cips",
+       "price": 175,
+       "kcal": 520
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kampanya",
+   "title": "Kampanyalar",
+   "sections": [
+    {
+     "title": "Kampanyalar",
+     "items": [
+      {
+       "name": "Bud Şişe",
+       "price": 180
+      },
+      {
+       "name": "Efes Özel Seri",
+       "price": 160
+      },
+      {
+       "name": "Bomonti",
+       "price": 180
+      },
+      {
+       "name": "Belfast",
+       "price": 160
+      },
+      {
+       "name": "Olmeca 5+1",
+       "price": 950
+      },
+      {
+       "name": "Jäger 5+1",
+       "price": 950
+      },
+      {
+       "name": "Kokteyl Shot",
+       "price": 600
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

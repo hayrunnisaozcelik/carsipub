@@ -1,0 +1,23 @@
+{
+ "note": "Avrupa Ligi tarihleri basından alındı; saatleri ve lig maçlarını mekân teyit etmeli.",
+ "maclar": [
+  {
+   "tarih": "2026-10-22T22:00:00+03:00",
+   "rakip": "Crystal Palace",
+   "turnuva": "UEFA Avrupa Ligi",
+   "yer": "İç saha"
+  },
+  {
+   "tarih": "2026-11-05T23:00:00+03:00",
+   "rakip": "Celtic",
+   "turnuva": "UEFA Avrupa Ligi",
+   "yer": "Deplasman"
+  },
+  {
+   "tarih": "2026-11-26T20:45:00+03:00",
+   "rakip": "Hapoel Beer Sheva",
+   "turnuva": "UEFA Avrupa Ligi",
+   "yer": "İç saha"
+  }
+ ]
+}

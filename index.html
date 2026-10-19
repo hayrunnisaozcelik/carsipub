@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Çarşı Pub</title>
+<meta name="description" content="Çarşı Pub: menü, signature kokteyller, maç akşamları ve rezervasyon. Çarşı sizin, eğlence bizim!">
+<meta name="theme-color" content="#0d0e12">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Permanent+Marker&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=4">
+<script type="module" src="assets/js/app.js?v=4"></script>
+</head>
+<body>
+
+<!-- ========== 1. Welcome (QR lands here) ========== -->
+<section class="view home" data-view="home">
+  <div class="logo-wrap">
+    <img class="rays" src="assets/img/rays.svg" alt="" aria-hidden="true">
+    <!-- Drawn after the printed menu's mug logo; swap for the original file when available -->
+    <svg class="logo" viewBox="0 0 220 250" role="img" aria-label="Çarşı Pub">
+      <g fill="#fff">
+        <circle cx="62" cy="58" r="34"/><circle cx="104" cy="40" r="38"/><circle cx="148" cy="54" r="34"/><circle cx="174" cy="80" r="22"/><circle cx="40" cy="84" r="22"/>
+        <rect x="40" y="62" width="140" height="42" rx="10"/>
+      </g>
+      <text x="108" y="84" text-anchor="middle" font-family="Permanent Marker, cursive" font-size="38" fill="#0d0e12">Çarşı</text>
+      <path d="M44 104 V214 a18 18 0 0 0 18 18 H158 a18 18 0 0 0 18 -18 V104" fill="none" stroke="#fff" stroke-width="9" stroke-linejoin="round"/>
+      <path d="M176 132 h14 a20 20 0 0 1 20 20 v34 a20 20 0 0 1 -20 20 h-14" fill="none" stroke="#fff" stroke-width="9"/>
+      <text x="110" y="208" text-anchor="middle" font-family="Bebas Neue, Arial Narrow, sans-serif" font-size="104" fill="#fff" letter-spacing="2">PUB</text>
+    </svg>
+  </div>
+  <p class="ribbon">Çarşı sizin, eğlence bizim!</p>
+  <p class="welcome">Hoş geldin!</p>
+
+  <div class="home-actions">
+    <a class="big-btn menu-btn" href="#menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z"/><path d="M9 11h6M9 15h6"/></svg>
+      <span><b>Menü</b><small>Kokteyller, bira, viski, atıştırmalık</small></span>
+    </a>
+    <a class="big-btn match-btn" href="#mac">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 5h-5L8 10z"/></svg>
+      <span><b>Maçlar &amp; Rezervasyon</b><small id="home-next">Maç akşamları ve yer ayırtma</small></span>
+    </a>
+  </div>
+
+  <p class="motto"><b>Bira</b> soğuk, müzik yüksek, <b>dostluk</b> sıcak!</p>
+</section>
+
+<!-- ========== 2. Menu ========== -->
+<section class="view" data-view="menu" hidden>
+  <header class="bar">
+    <a class="back" href="#" aria-label="Ana sayfa">‹</a>
+    <h1>Menü</h1>
+    <a class="bar-link" href="#mac">Maçlar</a>
+  </header>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Menü bölümleri"></nav>
+  <main class="wrap" id="panels"></main>
+  <footer class="foot">
+    <p>Fiyatlarımıza KDV ve vergiler dahildir. Fiyat değişim tarihi <span id="updated"></span>.</p>
+    <p>18 yaşından küçüklere alkollü içki satılmaz.</p>
+  </footer>
+</section>
+
+<!-- ========== 3. Matches & reservation ========== -->
+<section class="view" data-view="mac" hidden>
+  <header class="bar">
+    <a class="back" href="#" aria-label="Ana sayfa">‹</a>
+    <h1>Maçlar</h1>
+    <a class="bar-link" href="#menu">Menü</a>
+  </header>
+  <main class="wrap">
+    <div class="next" id="next"></div>
+
+    <section class="block" id="fixtures-block">
+      <h2>Fikstür</h2>
+      <ul class="fixtures" id="fixtures"></ul>
+    </section>
+
+    <section class="block reserve" aria-labelledby="res-title">
+      <h2 id="res-title">Rezervasyon</h2>
+      <p class="muted">Maç akşamları yerler çabuk doluyor. Arayın ya da WhatsApp'tan yazın.</p>
+      <form id="res-form">
+        <label>Hangi akşam?<select id="res-match"></select></label>
+        <div class="two">
+          <label>Kaç kişi?<input id="res-people" type="number" min="1" max="30" value="4" inputmode="numeric"></label>
+          <label>İsim<input id="res-name" type="text" autocomplete="given-name" placeholder="Adın"></label>
+        </div>
+        <button class="big-btn wa" type="submit">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>
+          <span><b>WhatsApp'tan yer ayırt</b></span>
+        </button>
+      </form>
+      <a class="big-btn call" id="call" href="#">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+        <span><b>Hemen ara</b></span>
+      </a>
+      <p class="pending" id="pending" hidden>Telefon numarası eklenince bu butonlar çalışacak.</p>
+    </section>
+  </main>
+</section>
+
+<dialog class="viewer" id="viewer" aria-label="Kokteyl">
+  <img alt="">
+  <button type="button" class="x" id="viewer-close" aria-label="Kapat">✕</button>
+</dialog>
+
+<dialog class="quiz" id="quiz" aria-labelledby="quiz-title">
+  <button type="button" class="x" id="quiz-close" aria-label="Kapat">✕</button>
+  <p class="quiz-step" id="quiz-step"></p>
+  <h2 id="quiz-title">Ne içsem?</h2>
+  <div id="quiz-body"></div>
+</dialog>
+
+</body>
+</html>
